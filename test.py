@@ -370,3 +370,126 @@
 #         print("You Got Attacked By An Angry Trout.")
 # else:
 #     print("You Fell Into A Hole, Game Over.")
+
+# Mersenne Twister
+# import random
+# import my_module
+
+# random_integer = random.randint(1, 10)
+# print(random_integer)
+
+# random_float = random.random() * 5
+# print(random_float)
+
+# random_love_score = random.randint(1, 100)
+# print(f"Your Love Score Is {random_love_score}")
+
+# print(my_module.pi)
+
+
+# Heads And Tails Program
+
+# import random
+
+# random_side = random.randint(0, 1)
+# if random_side == 1:
+#     print(f"HEADS")
+# else:
+#     print(f"TAILS")
+
+# TO DO LIST USING PYTHON
+
+# states_of_India = ["UtterPradesh", "MadhyaPradesh", "Rjasthan", "WestBengal", "TamilNadu"]
+# print(states_of_India[4])
+# print(states_of_India[-2])
+# states_of_India[4] = "AndhraPradesh"
+# states_of_India.append("Karnataka")
+# print(states_of_India)
+
+# Banker Roulette Who Will Pay The Bill
+# import random
+
+# names_string = input("Give Every Body's Name, Seperated BY A Comma : \n")
+# names = names_string.split(", ")
+# num_items = len(names)
+
+# print(num_items)
+# print(names)
+# random_choice = random.randint(0, num_items - 1)
+# person_to_pay_bill = names[random_choice]
+# print(f"Person Who Will Pay The Bill Is:'{person_to_pay_bill}'.")
+
+# Index Errors With Nested Lists
+
+# dozen_fruits = ["mango", "apple", "banana", "orange", "apricot", "kiwi", "grapes", "kashew", "jackfruit", "watermilon", "muskmilon", "jamoon"]
+# dozen_vegetables = ["spinach", "tomatoes", "potato", "onion", "brinjal", "curryleaves"]
+# fruits_and_vegetables = [dozen_fruits, dozen_vegetables]
+# print(fruits_and_vegetables)
+
+# TREASURE MAP --- CODING CHALLENGE
+
+# row1 = ["😀", "😀", "😀"]
+# row2 = ["😀", "😀", "😀"]
+# row3 = ["😀", "😀", "😀"]
+
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+# position = input("Where Do You Want To Put The Treasure?\n")
+
+# horizonatl = int(position[0])
+# vertical = int(position[1])
+
+# map[vertical - 1][horizonatl - 1] = "X"
+
+# print(f"{row1}\n{row2}\n{row3}")
+
+# Rock Papers Scissors Game
+# import random
+
+# rock = '''
+#     _________
+# ---'   ______)
+#       (_______)
+#       (_______)
+#       (______)
+# ---.__(_____)
+# '''
+# paper = '''
+#     _______
+# ---'    ____)_________
+#            ___________)_
+#           ______________)
+#          ______________)
+# ---._______________)
+# '''
+# scissors = '''
+#     _______
+# ---'   ____)________
+#           __________)__
+#        ________________)
+#      ______)
+# ---.__(____)
+# '''
+
+# game_images = [rock, paper, scissors]
+
+# user_choice = int(input("What Do You Choose ? Type 0 For Rock, 1 For Paper or 2 For Scissor:\n"))
+# if user_choice >= 3 or user_choice < 0:
+#     print("You Typed An Invalid Number, You Lose!")
+# else:
+#     print(game_images[user_choice])
+
+#     computer_choice = random.randint(0, 2)
+#     print("computer Choose:\n")
+#     print(game_images[computer_choice])
+
+#     if user_choice == 0 and computer_choice == 2:
+#         print("You Won!")
+#     elif computer_choice == 0 and user_choice == 0:
+#         print("You Lose!")
+#     elif computer_choice > user_choice:
+#         print("You Lose!")
+#     elif computer_choice < user_choice:
+#         print("You Won!")
+#     elif computer_choice == user_choice:
+#         print("It Is A Draw!")

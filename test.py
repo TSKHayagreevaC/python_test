@@ -493,3 +493,160 @@
 #         print("You Won!")
 #     elif computer_choice == user_choice:
 #         print("It Is A Draw!")
+
+# Loops // for loop
+# papers = ["TheHindu", "TimesNow", "DeccanChronical", "Tribune", "NewYorkExpress" , "IndianExpress"]
+# for paper in papers:
+#     print("Every Day Read News Paper: "+paper)
+# print(papers)
+
+# Code To Caliculate The Aerage Height Of A List Of Students
+
+# student_heights = input("Enter A List Of Students Heights:\n").split()
+# for n in range(0, len(student_heights)):
+#     student_heights[n] = int(student_heights[n])
+
+# total_height = 0
+# for height in student_heights:
+#     total_height += height
+
+# number_of_students = 0
+# for student in student_heights:
+#     number_of_students += 1
+
+# average_height = total_height / number_of_students
+# print(f"Average Height Of Students Is : {average_height}")
+
+# Highest Score Exercise
+
+# student_scores = input("Enter The List Of Student Scores:\n").split()
+# for n in range(0, len(student_scores)):
+#     student_scores[n] = int(student_scores[n])
+# print(student_scores)
+
+# highest_score = 0
+# for score in student_scores:
+#     if score > highest_score:
+#         highest_score = score
+# print(f"The Highest Score In The Class Is : {highest_score}")
+
+# for loops with range function
+
+# for number in range(1, 11):
+#     print(number)
+
+# total = 0
+# for number in range(1, 101):
+#     total += number
+# print(total)
+
+# Program To Add Even Numbers
+
+# total = 0
+# for number in range(2, 101, 2):
+#     total += number
+# print(f"Total Of The Numbers Is : {total}")
+
+# total2 = 0
+# for number in range(1, 101):
+#     if number % 2 == 0:
+#         total2 += number
+
+# print(total2)
+
+# fizz buzz // job interview question
+
+# for number in range(1, 101):
+#     if number % 3 == 0 and number % 5 == 0 :
+#         print("Fizz Buzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
+
+# # Create A PassWord Generator
+
+# import random
+
+# letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+# symbols = ['!','#', '$', '%', '&', '(', ')', '*', '+']
+
+# print("Welcome To My PassWord Generator")
+# nr_letters = int(input("How Many Letters You Want In Your PassWord ?\n"))
+# nr_numbers = int(input("How Many Numbers You Want In Your PassWord ?\n"))
+# nr_symbols = int(input("How Many Symbols You Want In Your PassWord ?\n"))
+
+# # Type One PassWord Generator
+# PassWord = ""
+
+# for char in range(1, nr_letters + 1):
+#     PassWord += random.choice(letters)
+
+# for char in range(1, nr_symbols + 1):
+#     PassWord += random.choice(symbols)
+
+# for char in range(1, nr_numbers + 1):
+#     PassWord += random.choice(numbers)
+
+# print(f"Type One Password is : {PassWord}")
+
+# # Type Two Password Generator
+
+# PassWord_list = []
+
+# for char in range(1, nr_letters + 1):
+#     PassWord_list += random.choice(letters)
+
+# for char in range(1, nr_symbols + 1):
+#     PassWord_list += random.choice(symbols)
+
+# for char in range(1, nr_numbers + 1):
+#     PassWord_list += random.choice(numbers)
+
+# print(f"Type Two Password is : {PassWord_list}")
+# random.shuffle(PassWord_list)
+# print(PassWord_list)
+
+# PassWord = ""
+# for char in PassWord_list:
+#     PassWord += char
+
+# print(f"Your Final Password Is : {PassWord}")
+
+# Python Functions
+
+# print("Hello!")
+# num_char = len("Hello!")
+# print(num_char)
+
+# def my_function():
+#     print("Hello")
+#     print("Welcome To My Function")
+#     print("Bye")
+
+# my_function()
+
+# While Loop
+
+# number_of_hurdles = 6
+# while number_of_hurdles > 0:
+#     number_of_hurdles -= 1
+#     print(f"Number Of Hurdles Are: {number_of_hurdles}")
+
+# number_of_ways = 3
+# while not number_of_ways == 3:
+#     number_of_ways += 1
+#     print("Hi, Number Of Ways Is Three...")
+
+# for and while loops combination
+# test_value = 3
+# test_integers = [1, 2]
+# while test_value > 0:
+#     test_value -= 1
+#     print("While Loop Executed...")
+#     for test_integer in test_integers :
+#         test_integer -= 1
+#         print("For Loop executed...")

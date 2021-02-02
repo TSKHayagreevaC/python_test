@@ -650,3 +650,54 @@
 #     for test_integer in test_integers :
 #         test_integer -= 1
 #         print("For Loop executed...")
+
+# HANGMAN Game
+
+# import random
+# import hangman_art
+# import hangman_words
+
+# print(hangman_art.logo)
+
+# print(f"Welcome To HANGMAN GAME You Have SIX Lives Try And Complete The Game...")
+
+# choosen_word = random.choice(hangman_words.word_list)
+# print(f"The Solution Is : {choosen_word}")
+
+# display = []
+# word_length = len(choosen_word)
+# for _ in range(word_length):
+#     display += "_"
+# print(display)
+
+# lives = 5
+# end_of_game = False
+
+# while not end_of_game:
+#     guess = input("Guess A Letter:\n").lower()
+
+#     for position in range(word_length):
+#         letter = choosen_word[position]
+#         # print(f"Current Position: {position} \n Curent Letter: {letter} \n Guessed Letter: {guess}")
+#         if letter == guess:
+#             display[position] = letter
+#         # else:
+#         #     print("Not Match...Try Again")
+
+#     if guess in display:
+#         print(input(f"You Already Guessed This Letter: {guess}"))
+
+#     if guess not in choosen_word:
+#         print(f"You Guessed {guess}, That's Not In The Word. You Lost A Life... ")
+#         lives -= 1
+#         if lives == 0:
+#             end_of_game = True
+#             print("You Lost The Game...")
+
+#     print(f"{' '.join(display)}")
+
+#     if "_" not in display:
+#         end_of_game = True
+#         print("You Won The Game...")
+
+#     print(hangman_art.stages[lives])

@@ -701,3 +701,108 @@
 #         print("You Won The Game...")
 
 #     print(hangman_art.stages[lives])
+
+# Functions And Paramater
+
+# def greet():
+#     print("Hello!")
+#     print("How Are You...")
+#     print("How Is To Day...")
+# greet()
+
+# def greet_name(name):
+#     print(f"Hello {name}, Welcome To You...")
+# greet_name("srikanth")
+
+# def greet_name_location(name, location):
+#     print(f"Hello {name}, You Are From {location}.")
+# greet_name_location("srikanth","hyderabad")
+# greet_name_location(name="srikanth",location="hyderabad")
+# greet_name_location(location="secunderabad", name="hayagreeva")
+
+# Area Calculation
+
+# import math
+
+# def paint_calculator(height, width, cover):
+#     area = height * width
+#     num_cans= math.ceil(area / cover)
+#     print(f"Number Of Cans Required Is : {num_cans}")
+
+# test_h = int(input("Enter Height Of Wall:\n"))
+# test_w = int(input("Enter Width Of Wall: \n"))
+# coverage = 5
+# paint_calculator(height = test_h, width= test_w, cover= coverage)
+
+# Prime Number Checker
+
+# def prime_checker(number):
+#     is_prime = True
+#     for i in range(2, number):
+#         if number % i == 0:
+#             is_prime = False
+#     if is_prime:
+#         print("Number Entered Is A Prime Number")
+#     else:
+#         print("Number Entered Is Not A Prime Number.")
+
+# n = int(input("Enter The Number To Be Checked:\n"))
+# prime_checker(number=n)
+
+# Ceaser Cipher Project
+
+# import cypher_art
+
+# print(cypher_art.logo)
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+# def caesar(start_text, shift_amount, cipher_direction):
+#     end_text = ""
+#     if cipher_direction == "decode":
+#         shift_amount *= -1
+#     for char in start_text:
+#         if char in alphabet:
+#             position = alphabet.index(char)
+#             new_position = position + shift_amount
+#             end_text += alphabet[new_position]
+#         else:
+#             end_text += char
+#     print(f"{cipher_direction}ed Message is: '{end_text}'")
+
+# should_continue = True
+# while should_continue:
+#     direction = input("Enter preference Either Encode Or Decode:\n")
+#     text = input("Enter Your Message:\n").lower()
+#     shift = int(input("Enter The Shift Number:\n"))
+
+#     shift = shift % 26
+#     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
+
+#     result = input("Type 'yes' If You Wanr To Go Again, Otherwise Type 'no':\n")
+#     if result == "no":
+#         should_continue = False
+#         print("Good Bye...")
+
+# Lengthy And Extra Code For Ceaser Cipher Program...
+
+# def encrypt(plain_text, shift_amount):
+#     cypher_text = ""
+#     for letter in plain_text:
+#         position = alphabet.index(letter)
+#         new_position = position + shift_amount
+#         new_letter = alphabet[new_position]
+#         cypher_text += new_letter
+#     print(f"Encoded Message is :{cypher_text}")
+
+# def decrypt(cipher_text, shift_amount):
+#     plain_text = ""
+#     for letter in cipher_text:
+#         position = alphabet.index(letter)
+#         new_position = position - shift_amount
+#         plain_text += alphabet[new_position]
+#     print(f"Decoded Message is: {plain_text}")
+
+# if direction == "encode":
+#     encrypt(plain_text=text, shift_amount=shift)
+# elif direction == "decode":
+#     decrypt(cipher_text=text, shift_amount=shift)

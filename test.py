@@ -806,3 +806,122 @@
 #     encrypt(plain_text=text, shift_amount=shift)
 # elif direction == "decode":
 #     decrypt(cipher_text=text, shift_amount=shift)
+
+# Dictionaries In Python
+
+# programming_dictionary = {
+#     "bug": "An Error In A Program That Prevents The Program From Running As Expected.",
+#     "function": "A Piece Of Code That You Can Easily Call Over And Over Again.",
+#     "Loop": "The Action Of Doing Something Over And Over Again.",
+# }
+# print(programming_dictionary["bug"])
+# programming_dictionary["Loop"] = "The Action Of Doing Something Over And Over again."
+# print(programming_dictionary)
+# # empty_dictinary = {}
+# # programming_dictionary = {}
+# # print(programming_dictionary)
+# programming_dictionary["bug"] = "A Moth In Your Computer."
+# print(programming_dictionary)
+
+# # Loop Through A Dictionary
+
+# for thing in programming_dictionary:
+#     print(thing)
+
+# Grading Program Using Dictionary
+
+# student_scores = {
+#     "Rama": 81,
+#     "Krishna": 78, 
+#     "BalaRama": 99,
+#     "Kalki": 74,
+#     "Vamana":64,
+# }
+
+# student_grades = {}
+
+# for student in student_scores:
+#     score = student_scores[student]
+#     if score > 90:
+#         student_grades[student] = "Distinction"
+#     elif score > 80:
+#         student_grades[student] = "First Class"
+#     elif score > 70:
+#         student_grades[student] = "Second Class"
+#     elif score > 60:
+#         student_grades[student] = "Third Class"
+#     else:
+#         student_grades[student] = "Fail"
+
+# print(student_grades)
+
+# Nesting A List In A Dictionary
+
+# travel_log = {
+#     "China": {"cities_favourate": ["Beiging", "Shanghai", "Yangtze"], "favourate_score": 10},
+#     "Japan": {"cities_favourate":["Tokyo", "Fukushima", "Hikoku"], "favourate_score": 5},
+# }
+
+# # print(travel_log)
+
+# # Nesting Dictionary In A List
+
+# travel_list = [
+#     {
+#         "country":"China", 
+#         "cities_favourate": ["Beiging", "Shanghai", "Yangtze"], 
+#         "favourate_score": 10
+#         },
+#     {
+#         "country":"Japan", 
+#         "cities_favourate":["Tokyo", "Fukushima", "Hikoku"], 
+#         "favourate_score": 5
+#         },
+# ]
+
+# # print(travel_list)
+
+# # Add New Things To The Dictionary
+
+# def add_new_country(country_like, cities_favourate, favourate_score):
+#     new_country = {}
+#     new_country["country"] = country_like
+#     new_country["favourate"] = favourate_score
+#     new_country["cities"] = cities_favourate
+#     travel_list.append(new_country)
+
+# add_new_country("Russia", 20, ["moscow", "saint petersburg"])
+# print(travel_list)
+
+# # Silent auction OR Blind Auction Program
+
+# import silent_auction_art
+
+# print(silent_auction_art.logo)
+# print("***WELCOME TO SILENT AUCTION PROCESS***")
+
+# bids = {}
+# bidding_finished = False
+
+# def find_highest_bidder(bidding_record):
+#     highest_bid = 0
+#     winner = ""
+#     for bidder in bidding_record:
+#         bid_amount = bidding_record[bidder]
+#         if bid_amount > highest_bid:
+#             highest_bid = bid_amount
+#             winner = bidder
+#     print(f"Winner Is : {winner}, With Highest Bid Of : {highest_bid}.")
+
+# while not bidding_finished:
+#     name = input("Please Enter Your Name:\n")
+#     price = int(input("Please Enter Bidding Price:\n"))
+#     bids[name] = price
+#     should_continue = input("Are There Any Other Bidder? Type 'yes' Or 'no':\n")
+#     if should_continue == "no":
+#         bidding_finished = True
+#         find_highest_bidder(bids)
+#     elif should_continue == "yes":
+#         print("ok")
+
+# Functions With Outputs
